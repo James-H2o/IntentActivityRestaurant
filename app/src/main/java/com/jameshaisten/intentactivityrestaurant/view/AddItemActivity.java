@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -34,15 +35,30 @@ public class AddItemActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                String name = itemName.getText().toString();
-                Double price = Double.parseDouble(itemPrice.getText().toString());
+                String name;
+                Double price;
+                Log.d("onClick------------->", "The value of Name: " + itemName.getText());
+
+
+
+                    name = itemName.getText().toString();
+
+                try {
+                    price = Double.parseDouble(itemPrice.getText().toString());
+                } catch (NumberFormatException e) {
+                    price = 0.0;
+                }
+
 
                 FoodItem foodItem = new FoodItem(name, price);
 
                 Intent intent = new Intent();
                 intent.putExtra(DATA_TAG, foodItem);
                 setResult(RESULT_OK, intent);
+
+
                 finish();
+
             }
         });
 

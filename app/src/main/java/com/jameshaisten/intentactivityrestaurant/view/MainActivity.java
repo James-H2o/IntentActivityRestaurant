@@ -53,6 +53,6 @@ public class MainActivity extends AppCompatActivity {
     private void updateDisp(FoodItem foodItem) {
 
         nameTextView.setText(foodItem.getName());
-        priceTextView.setText(foodItem.getPrice().toString());
+        priceTextView.setText(String.format("$%.2f", foodItem.getPrice()));
     }
 }// End MainActivity

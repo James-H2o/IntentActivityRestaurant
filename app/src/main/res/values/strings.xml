@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">IntentActivityRestaurant</string>
+    <string name="company_name">JH Food</string>
+    <string name="add_food">Add Food</string>
+    <string name="new_food_item">New Food Item</string>
+    <string name="price">Price</string>
+    <string name="name">Name</string>
+    <string name="add_item">Add Item</string>
 </resources>

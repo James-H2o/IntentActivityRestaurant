@@ -11,7 +11,10 @@
         android:id="@+id/textview_title_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="JH Food"
+        android:text="@string/company_name"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -20,7 +23,8 @@
         android:id="@+id/button_goto_add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Food"
+        android:text="@string/add_food"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textview_title_main" />
@@ -29,7 +33,7 @@
         android:id="@+id/textview_new_food"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Food Item"
+        android:text="@string/new_food_item"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_goto_add" />
@@ -38,7 +42,7 @@
         android:id="@+id/textview_price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Price"
+        android:text="@string/price"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textview_new_food" />
